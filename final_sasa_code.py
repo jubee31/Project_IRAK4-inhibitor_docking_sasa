@@ -5,11 +5,10 @@ import freesasa
 import math
 import re
 
-# ===== 경로 & 상수 =====
-FRAG_CSV = Path("fragment_hit_table.csv")      # fragment 정보 csv
-LIG_DIR = Path("pdb_ligands")                  # ligand 단독 PDB 폴더
-COMPLEX_DIR = Path("complex_pdb")              # protein+ligand complex PDB 폴더
-OUT_CSV = Path("fragments_orientation_final_real_jjinmack.csv")
+FRAG_CSV = Path("fragment 정보 csv")     
+LIG_DIR = Path("ligand 단독 PDB 폴더")                  
+COMPLEX_DIR = Path("protein+ligand complex PDB 폴더")               
+OUT_CSV = Path("output_sasa_results.csv")
 
 # 단백질 ATOM 마지막 serial 번호 (complex PDB에서 ligand가 시작하는 atom index 기준)
 N_REC = 2185  # receptor atom 수 (0-based index에서 ligand는 N_REC 이후)
